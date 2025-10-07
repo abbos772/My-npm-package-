@@ -1,0 +1,46 @@
+{
+  "name": "@abbos04/my-npm-package",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A small utility library (add, greet)",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsup src/index.ts --format cjs,esm --dts --out-dir dist",
+    "prepare": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "~5.9.3",
+    "@types/node": "^24.7.0",
+    "rimraf": "^5.0.0",
+    "eslint": "^9.36.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "vitest": "^3.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbos772/My-npm-package-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abbos772/My-npm-package-/issues"
+  },
+  "homepage": "https://github.com/abbos772/My-npm-package-#readme"
+}
