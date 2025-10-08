@@ -1,7 +1,7 @@
 {
   "name": "@abbos04/my-npm-package",
   "private": false,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A small utility library (add, greet)",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
