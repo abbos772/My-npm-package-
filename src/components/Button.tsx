@@ -18,7 +18,7 @@ export const Button: React.FC<ButtonProps> = ({
       : "bg-gray-200 text-gray-800 hover:bg-gray-300";
 
   return (
-    <button className={`${baseStyle} ${variantStyle}`} {...props}>
+    <button style={{padding:"50px",background:"red"}} className={`${baseStyle} ${variantStyle}`} {...props}>
       {label}
     </button>
   );
