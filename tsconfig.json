@@ -7,11 +7,12 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "lib": ["ES2019", "DOM"],
+    "types": ["node"],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"]
+  "include": ["src", "src/types"]
 }

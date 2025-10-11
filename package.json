@@ -1,31 +1,50 @@
 {
   "name": "@abbos04/my-npm-package",
   "private": false,
-  "version": "1.2.2",
-  "description": "A small utility library (add, greet)",
-  "main": "dist/index.cjs",
+  "version": "1.2.5",
+  "description": "My first npm package",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.js"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "keywords": [
+    "react",
+    "components",
+    "ui"
+  ],
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsup src/index.ts --format cjs,esm --dts --out-dir dist",
+    "build": "tsup src/index.ts --format cjs,esm --dts --out-dir dist --inject-style",
+    "build:watch": "tsup src/index.ts --format cjs,esm --dts --out-dir dist --inject-style --watch",
     "prepare": "npm run build",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
-    "test": "vitest"
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@svgr/rollup": "^8.1.0",
+    "@types/node": "^24.7.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "@vitejs/plugin-react": "^5.0.4",
+    "react": "^19.2.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
   }
 }
