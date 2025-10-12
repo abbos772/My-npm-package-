@@ -1,0 +1,105 @@
+
+.notfound-card {
+background: #202831; /* card background */
+color: #cbd5e1; /* light slate text */
+border-radius: 16px;
+padding: 40px 36px;
+width: 100%;
+min-width: 180px; 
+text-align: center;
+margin: 3px;
+
+}
+
+.Stic{
+  padding: 10px;
+}
+
+.card_flex{
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #646A70;
+    font-family: sans-serif;
+}
+.addStick1{
+    width: 180px;
+      text-align: center;
+    margin: 0 auto;
+     font-size: 13px;
+     color: #cbd5e1;
+     font-family: sans-serif;
+     display: flex;
+     align-items: center;
+     background: #2D3A47;
+     justify-content: center;
+     height: 30px;
+     gap: 6px;
+     border-radius: 12px;
+     margin-top: 12px;
+     margin-bottom: 12px;
+}
+.notfound-svg {
+display: block;
+margin: 0 auto 12px;
+color: #646A70; /* svg stroke / fill color */
+}
+
+
+/* style specific svg parts */
+.notfound-svg .lens {
+fill: none;
+stroke: currentColor;
+stroke-width: 2.2;
+}
+
+
+.notfound-svg .handle {
+stroke: currentColor;
+stroke-width: 2.2;
+stroke-linecap: round;
+}
+
+
+.notfound-svg .eye {
+fill: currentColor;
+}
+
+
+.notfound-svg .mouth {
+stroke: currentColor;
+stroke-width: 1.8;
+fill: none;
+stroke-linecap: round;
+stroke-linejoin: round;
+}
+
+
+.notfound-title {
+font-size: 20px;
+font-weight: 600;
+color: #646A70;
+margin: 8px 0 4px;
+font-family:sans-serif;
+}
+
+
+.notfound-sub {
+font-size: 14px;
+color: #646A70;
+margin: 0;
+}
+
+
+/* responsive tweak */
+@media (max-width: 420px) {
+.notfound-card {
+padding: 28px 20px;
+border-radius: 12px;
+}
+.notfound-svg {
+width: 72px;
+height: 72px;
+}
+}

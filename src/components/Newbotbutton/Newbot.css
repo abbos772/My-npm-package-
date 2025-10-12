@@ -1,0 +1,35 @@
+.Newbot{
+    background: #212932;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 2px;
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+}
+.Newbot h3{
+    color: #4CB2FF;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.Plus{
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4CB2FF;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #4CB2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:normal;
+    font-family: sans-serif;
+}
+.Newbot:hover{
+    cursor: pointer;
+    background: #2d353f;
+}
