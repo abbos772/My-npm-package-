@@ -1,7 +1,7 @@
 {
   "name": "@abbos04/my-npm-package",
   "private": false,
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "My first npm package",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -34,8 +34,8 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-     "react": ">=18.0.0",
-     "react-dom": ">=18.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "devDependencies": {
     "@svgr/rollup": "^8.1.0",
