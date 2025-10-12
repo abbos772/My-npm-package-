@@ -34,8 +34,8 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+     "react": ">=18.0.0",
+     "react-dom": ">=18.0.0"
   },
   "devDependencies": {
     "@svgr/rollup": "^8.1.0",
