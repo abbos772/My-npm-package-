@@ -13,7 +13,8 @@ const CreateEmojiButton: React.FC<Props> = ({
   className = "",
 }) => {
   return (
-    <button
+   <div className="Create_wrapper">
+     <button
       type="button"
       className={`create-emoji ${className}`}
       onClick={onClick}
@@ -26,6 +27,7 @@ const CreateEmojiButton: React.FC<Props> = ({
 
       <span className="ce-label">{label}</span>
     </button>
+   </div>
   );
 };
 

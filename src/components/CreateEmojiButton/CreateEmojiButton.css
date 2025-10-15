@@ -19,6 +19,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.Create_wrapper{
+  width: 100%;
+  min-width: 180px;
+}
+
 /* Icon sizing and alignment: keeps same color via currentColor */
 .ce-icon {
   display: inline-flex;

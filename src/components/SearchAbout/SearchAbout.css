@@ -1,7 +1,7 @@
 .search-wrapper {
-  position: relative;
+   position: relative;
   width: 100%;
-  max-width: 280px;
+  min-width: 180px;
   padding: 2px;
 
 }
@@ -44,4 +44,10 @@
 }
 .search-input::placeholder {
   transition: color 0.3s ease;
+}
+
+@media (max-width: 350px) {
+  .search-input {
+    font-size: 12px;
+  }
 }

@@ -62,4 +62,25 @@
 .card-text .line2 { font-size: 13px; }
 
 /* subtle hover */
-.card-inner:hover { transform: translateY(-1px); }
+
+@media (max-width:350px){
+  .stick-svg {
+    background-color: red;
+  width: 50px;
+  height: 50px;
+  display: block;
+  color: var(--accent);
+}
+  .card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--accent);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
+}
+.card-text .line2 { font-size: 11px; }
+}

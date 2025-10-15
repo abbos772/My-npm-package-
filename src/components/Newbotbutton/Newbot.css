@@ -4,11 +4,16 @@
     border-top-right-radius: 12px;
     padding: 2px;
     width: 100%;
-    min-width: 200px;
+    min-width: 180px;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-left: 15px;
+   
+}
+
+.bot_wrapper{
+    width: 100%;
+    min-width: 180px;
 }
 .Newbot h3{
     color: #4CB2FF;
@@ -23,6 +28,7 @@
     border-radius: 50%;
     font-size: 16px;
     color: #4CB2FF;
+    margin-left: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,4 +38,18 @@
 .Newbot:hover{
     cursor: pointer;
     background: #2d353f;
+}
+
+@media (max-width: 350px) {
+    .Newbot h3{
+        font-size: 12px;
+    }
+    .Plus{
+        width: 17px;
+        height: 17px;
+        font-size: 14px;
+        border: 2px solid #4CB2FF;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
 }

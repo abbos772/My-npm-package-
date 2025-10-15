@@ -28,30 +28,34 @@
   outline: none;
 }
 
-/* Default icon color (the color you requested) */
+/* Default icon color */
 .Tab svg {
   color: #74808B;
   transition: color 0.12s ease, transform 0.12s ease;
 }
 
-/* Hover: visual feedback */
+/* Hover holatda biroz yorqinroq */
 .Tab:hover svg {
-  color: #ffffff;
-  transform: translateY(-1px);
+  color: #A0AAB5;
 }
 
-/* Active / click: stays white while pressed */
+/* Bosilganda va fokusda oq tursin */
+.Tab:focus svg,
+.Tab:focus-visible svg {
+  color: white;
+}
+
+/* Active bosilish paytidagi animatsiya */
 .Tab:active svg {
-  color: #ffffff;
   transform: translateY(0);
 }
 
-/* Focus visible for keyboard accessibility */
+/* Fokus chizig‘i */
 .Tab:focus-visible {
-  box-shadow: 0 0 0 3px rgba(116, 128, 139, 0.18);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
 }
 
-/* optional: reduce gap on very small screens */
+/* Responsive */
 @media (max-width: 360px) {
   .Tabs {
     gap: 4px;

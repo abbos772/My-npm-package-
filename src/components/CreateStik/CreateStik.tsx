@@ -13,7 +13,7 @@ const CreateStik: React.FC<Props> = ({
   className = "",
 }) => {
   return (
-    <div>
+    <div className="Create_wrapper">
       <button
       type="button"
       className={`create-emoji ${className}`}

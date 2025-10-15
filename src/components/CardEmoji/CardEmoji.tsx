@@ -16,7 +16,7 @@ const CaedEmoji = () => {
 
         <div className="card-text">
           <span className="line1">Создать набор</span>
-          <span className="line2">стикеров</span>
+          <span className="line2">эмодзи</span>
         </div>
       </div>
     </div>

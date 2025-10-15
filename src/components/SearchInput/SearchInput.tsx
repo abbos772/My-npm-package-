@@ -47,6 +47,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
       <input
         type="text"
         className="search-input"
+        style={{paddingLeft:"35px"}}
         placeholder={placeholder}
         onChange={handleChange}
         {...props}

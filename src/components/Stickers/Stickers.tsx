@@ -2,7 +2,7 @@ import React from 'react'
 import '../Notfound/Notfound.css'
 const Stickers = () => {
         return (
-            <div className="notfound-wrapper">
+            <div  className="notfound-wrapper">
              
         <div className="notfound-card">
                <div className='Stic'>

@@ -1,105 +1,143 @@
-
+/* ====== CARD ====== */
+.not_con{
+ min-width: 200px;
+}
 .notfound-card {
-background: #202831; /* card background */
-color: #cbd5e1; /* light slate text */
-border-radius: 16px;
-padding: 40px 36px;
-width: 100%;
-min-width: 180px; 
-text-align: center;
-margin: 3px;
-
+  background: #202831; /* card background */
+  color: #cbd5e1; /* light slate text */
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+ 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-.Stic{
+/* ====== STICKERS SECTION ====== */
+.Stic {
   padding: 10px;
 }
 
-.card_flex{
-    width: 200px;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 12px;
-    color: #646A70;
-    font-family: sans-serif;
-}
-.addStick1{
-    width: 180px;
-      text-align: center;
-    margin: 0 auto;
-     font-size: 13px;
-     color: #cbd5e1;
-     font-family: sans-serif;
-     display: flex;
-     align-items: center;
-     background: #2D3A47;
-     justify-content: center;
-     height: 30px;
-     gap: 6px;
-     border-radius: 12px;
-     margin-top: 12px;
-     margin-bottom: 12px;
-}
-.notfound-svg {
-display: block;
-margin: 0 auto 12px;
-color: #646A70; /* svg stroke / fill color */
+.card_flex {
+  max-width: 240px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #646A70;
+  font-family: sans-serif;
+  line-height: 1.4;
 }
 
+.addStick1 {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #cbd5e1;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  background: #2D3A47;
+  justify-content: center;
+  height: 34px;
+  gap: 6px;
+  border-radius: 12px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* hover effect for button */
+.addStick1:hover {
+  background: #364756;
+}
+
+/* ====== SVG STYLES ====== */
+.notfound-svg {
+  display: block;
+  margin: 0 auto 12px;
+  color: #646A70;
+}
 
 /* style specific svg parts */
 .notfound-svg .lens {
-fill: none;
-stroke: currentColor;
-stroke-width: 2.2;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
 }
-
 
 .notfound-svg .handle {
-stroke: currentColor;
-stroke-width: 2.2;
-stroke-linecap: round;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
 }
-
 
 .notfound-svg .eye {
-fill: currentColor;
+  fill: currentColor;
 }
-
 
 .notfound-svg .mouth {
-stroke: currentColor;
-stroke-width: 1.8;
-fill: none;
-stroke-linecap: round;
-stroke-linejoin: round;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-
+/* ====== TEXT ====== */
 .notfound-title {
-font-size: 20px;
-font-weight: 600;
-color: #646A70;
-margin: 8px 0 4px;
-font-family:sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #646A70;
+  margin: 8px 0 4px;
+  font-family: sans-serif;
 }
-
 
 .notfound-sub {
-font-size: 14px;
-color: #646A70;
-margin: 0;
+  font-size: 14px;
+  color: #646A70;
+  margin: 0;
 }
 
-
-/* responsive tweak */
+/* ====== RESPONSIVE MEDIA QUERIES ====== */
 @media (max-width: 420px) {
-.notfound-card {
-padding: 28px 20px;
-border-radius: 12px;
+  .notfound-card {
+    padding: 24px 18px;
+    border-radius: 12px;
+  }
+
+  .notfound-svg {
+    width: 72px;
+    height: 72px;
+  }
+
+  .card_flex {
+    max-width: 180px;
+    font-size: 11px;
+  }
+
+  .addStick1 {
+    width: 160px;
+    height: 30px;
+    font-size: 12px;
+  }
 }
-.notfound-svg {
-width: 72px;
-height: 72px;
-}
+
+@media (max-width: 320px) {
+  .notfound-card {
+    padding: 20px 14px;
+  }
+
+  .notfound-title {
+    font-size: 14px;
+  }
+
+  .card_flex {
+    font-size: 10px;
+  }
+
+  .addStick1 {
+    width: 140px;
+    height: 28px;
+  }
 }
