@@ -1,0 +1,82 @@
+:root{
+  --bg-page: #0f1720;
+  --card-bg: #212932;
+  --accent: #4CB2FF;
+}
+
+/* container */
+.card-stick {
+  display: inline-flex;
+  padding: 6px;
+  background: transparent;
+  border-radius: 12px;
+}
+
+/* card */
+.card-inner {
+  width: 90px;
+  height: 110px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* icon wrapper */
+.icon-wrap {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* svg uses currentColor for main strokes/fills */
+.stick-svg {
+  width: 56px;
+  height: 56px;
+  display: block;
+  color: var(--accent);
+}
+
+/* text */
+.card-text {
+
+  color: var(--accent);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.card-text .line1 { margin-bottom: 2px; }
+.card-text .line2 { font-size: 13px; }
+
+/* subtle hover */
+
+@media (max-width:350px){
+  .stick-svg {
+    background-color: red;
+  width: 50px;
+  height: 50px;
+  display: block;
+  color: var(--accent);
+}
+  .card-text {
+
+  color: var(--accent);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
+}
+.card-text .line2 { font-size: 11px; }
+}

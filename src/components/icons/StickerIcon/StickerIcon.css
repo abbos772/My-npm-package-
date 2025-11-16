@@ -3,11 +3,12 @@
  min-width: 200px;
 }
 .notfound-card {
-  background: #0077ff; /* card background */
+  background: #202831; /* card background */
   color: #cbd5e1; /* light slate text */
   border-radius: 16px;
   padding: 40px;
   text-align: center;
+ 
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 

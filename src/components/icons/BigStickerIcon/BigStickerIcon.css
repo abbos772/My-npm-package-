@@ -1,0 +1,13 @@
+.bigsticker{
+    background: #299EEC;
+    width: 62px;
+    height: 62px;
+    border-radius: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigsticker-icon {
+  color: #fffafb; /* endi shu rang iconning fill/stroke’iga o‘tadi */
+}

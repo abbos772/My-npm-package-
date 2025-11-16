@@ -1,0 +1,49 @@
+.filter-wrap {
+  display: inline-flex;
+  gap: 18px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.filter-tab {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 6px 0;
+  color: #7b8891; 
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color .12s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.filter-tab.active {
+  color: #ffffff;
+}
+
+.filter-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 2px;         
+  right: 2px;        
+  bottom: -7px;     
+  height: 2px;      
+  background: #2ea3ff;
+  border-radius: 2px;
+  transform-origin: center;
+  transition: all .12s ease;
+}
+
+.filter-tab:hover,
+.filter-tab:focus {
+  color: #e6eef6; 
+}
+
+.filter-tab:focus-visible {
+  box-shadow: 0 0 0 4px rgba(46,163,255,0.12);
+  border-radius: 4px;
+}

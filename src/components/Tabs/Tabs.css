@@ -1,6 +1,12 @@
+/* Asosiy container - icon tablar uchun */
 .Tabs_container {
   width: 100%;
   max-width: 76px;
+}
+
+/* Text tablar uchun container */
+.Tabs_container--text {
+  max-width: none !important;
 }
 
 .Tabs {
@@ -15,7 +21,15 @@
   box-sizing: border-box;
 }
 
-/* Tab button */
+/* Text tablar uchun Tabs */
+.Tabs--text {
+  height: auto;
+  padding: 4px;
+  gap: 8px;
+  background: transparent;
+}
+
+/* Tab button - asosiy */
 .Tab {
   display: inline-flex;
   align-items: center;
@@ -26,6 +40,42 @@
   border-radius: 6px;
   cursor: pointer;
   outline: none;
+  transition: all 0.12s ease;
+}
+
+/* Icon tablar uchun */
+.Tab--icon {
+  /* Sizning original icon tab stillaringiz */
+}
+
+/* Text tablar uchun */
+.Tab--text {
+  padding: 8px 16px;
+  color: #74808B;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+  background: transparent;
+}
+
+.Tab--text:hover {
+  color: #A0AAB5;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.Tab--text.Tab--active {
+  color: #ffffff;
+}
+
+.Tab--text.Tab--active::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: -2px;
+  height: 2px;
+  background: #2ea3ff;
+  border-radius: 2px;
 }
 
 /* Default icon color */
@@ -50,8 +100,13 @@
   transform: translateY(0);
 }
 
-/* Fokus chizig‘i */
-.Tab:focus-visible {
+/* Fokus chizig'i - text tablar uchun */
+.Tab--text:focus-visible {
+  box-shadow: 0 0 0 2px rgba(46, 163, 255, 0.5);
+}
+
+/* Fokus chizig'i - icon tablar uchun */
+.Tab--icon:focus-visible {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
 }
 
@@ -59,5 +114,16 @@
 @media (max-width: 360px) {
   .Tabs {
     gap: 4px;
+  }
+  
+  .Tabs--text {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 6px;
+  }
+  
+  .Tab--text {
+    padding: 6px 12px;
+    font-size: 13px;
   }
 }
