@@ -1,10 +1,8 @@
-export * from "./components/Button/Button";
 export { default as Card } from "./components/icons/CameraIcon/CameraIcon";
 export * from "./components/SearchInput/SearchInput";
 export { default as Tabs } from './components/Tabs/Tabs';
 export { default as Filter } from './components/icons/FilterIcon/FilterIcon';
 export type { Tab } from './components/icons/FilterIcon/FilterIcon';
-export type { Tab as TabType } from './components/Tabs/Tabs'
 export { default as CreateEmojiButton } from './components/icons/CreateEmojiIcon/CreateEmojiIcon';
 export { default as CreateStik } from './components/icons/CreateStikIcon/CreateStikIcon';
 export { default as BigSticker } from './components/icons/BigStickerIcon/BigStickerIcon';
